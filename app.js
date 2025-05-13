@@ -5,7 +5,7 @@ let searchBtn = document.getElementById("searchBtn");
 const getData = async (movie) => {
   try {
     let fetchData = await fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=${APIKey}&t=${movie}`
+      `https://www.omdbapi.com/?i=tt3896198&apikey=${APIKey}&t=${movie}`
     );
     let jsonData = await fetchData.json();
     console.log(jsonData);
